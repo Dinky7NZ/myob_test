@@ -21,7 +21,7 @@ my $output_file;
 print "myob test\n\n" if $DEBUG;
 
 #$input_file |= 'myob_input.csv'; #set a default if desired and don't make input file name mandatory
-$input_file or die "No input file given. Usage: $0 -f <INPUT FILE NAME> [-o <OUTPUT FILE NAME> [-d]]\n";
+$input_file or die "No input file given. Usage: $0 -f <INPUT FILE NAME> [-o <OUTPUT FILE NAME>] [-d]\n";
 
 print "input_file = '$input_file'\n\n" if $DEBUG;
 
