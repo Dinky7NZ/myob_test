@@ -1,0 +1,8 @@
+David,Rudd,60050,9%,01 March - 31 March
+Ryan,Chen,120000,10%,01 March - 31 March
+Negative,Salary,-100000,5%,01 April - 30 April
+Invalid,Salary,$100000,5%,01 April - 30 April
+No,Salary,,5%,01 April - 30 April
+Over50,Rate,100000,55%,01 April - 30 April
+Invalid,Rate,100000,55percent,01 April - 30 April
+No,Rate,100000,,01 April - 30 April
