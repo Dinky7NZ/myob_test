@@ -68,7 +68,7 @@ ok 17 - set_annual_salary('XXXXXX')
 ok 18 - set_super_rate(0.8)
 ```
 
-For a summarize test report use the 'prove' command (should come with standard distribution of perl:
+For a summarized test report use the 'prove' command which should come with standard distribution of perl:
 ```
 $ prove test/EMPLOYEE.t
 test/EMPLOYEE....ok 1/18# get_monthly_payslip returns array of data as below
