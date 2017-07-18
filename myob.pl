@@ -84,7 +84,7 @@ if (not $csv->eof) {
 }
 close $data;
 
-print "$count records read\n";
+print "$count records read\n" if $DEBUG;
 print &Dumper($data_records_ref) if $DEBUG;
 
 
