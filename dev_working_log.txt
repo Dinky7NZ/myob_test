@@ -97,6 +97,8 @@ upload to GitHub
 2nd round
 Aim, change solution to demonstrate other programming principals and standards
 e.g. OOP, TDD, production code approach
+
+Time spent - 16hours over 5 days
 =====================================
 
 Changing test to use OOP
