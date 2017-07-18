@@ -1,39 +1,41 @@
-=========================
-----------------------
-Setup instructions
-----------------------
+# Setup instructions
+
 Copy the scripts myob.pl and Test input file (myob_input.csv) to same directory on machine with perl installed.
 Copy all files in the lib/ and test/ directories to the same location where the myob.pl script is located.
 
+```
 ./myob.pl
 ./myob_input.csv
 ./lib/EMPLOYEE.pm
 ./lib/MYOB_UTILS.pm
 ./test/EMPLOYEE.t
 ./test/MYOB_UTILS.t
+```
 
-----------------------
-Execution instructions
-----------------------
+# Execution instructions
 
+```
 Usage: ./myob.pl -f <INPUT FILE NAME> [-o <OUTPUT FILE NAME>] [-d]
 e.g.
 ./myob.pl -f myob_input.csv -o myob_output.csv -d
+```
 
 output file name is not mandatory, defaults to 'myob_output.csv' if not provided.
 
 Example output file:
+```
 "David Rudd","01 March - 31 March",5004,922,4082,450
 "Ryan Chen","01 March - 31 March",10000,2696,7304,1000
+```
 
 
-----------------------
-Unit tests
-----------------------
+# Unit tests
+
 To run unit tests execture the test files like a normal perl file
 
 e.g. 
-perl test/EMPLOYEE.t
+```
+$ perl test/EMPLOYEE.t
 1..18
 ok 1 - get_first_name
 ok 2 - get_last_name
@@ -64,11 +66,11 @@ ok 16 - set_payment_period
 # now testing edge cases
 ok 17 - set_annual_salary('XXXXXX')
 ok 18 - set_super_rate(0.8)
-
+```
 
 For a summarize test report use the 'prove' command (should come with standard distribution of perl:
-
-prove test/EMPLOYEE.t
+```
+$ prove test/EMPLOYEE.t
 test/EMPLOYEE....ok 1/18# get_monthly_payslip returns array of data as below
 # [
 #   'David Rudd',
@@ -83,6 +85,6 @@ test/EMPLOYEE....ok 1/18# get_monthly_payslip returns array of data as below
 test/EMPLOYEE....ok
 All tests successful.
 Files=1, Tests=18,  0 wallclock secs ( 0.04 cusr +  0.01 csys =  0.05 CPU)
+```
 
-=========================
 
